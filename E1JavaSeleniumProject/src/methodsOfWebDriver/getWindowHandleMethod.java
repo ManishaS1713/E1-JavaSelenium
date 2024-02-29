@@ -2,9 +2,6 @@ package methodsOfWebDriver;
 
 import java.time.Duration;
 import java.util.Set;
-
-import javax.swing.text.html.HTMLDocument.Iterator;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,7 +13,7 @@ public class getWindowHandleMethod {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
-		// Load the website
+		// Load the Website
 		driver.get("https://omayo.blogspot.com/");
 
 			driver.getWindowHandle(); //to get the address of parent window
