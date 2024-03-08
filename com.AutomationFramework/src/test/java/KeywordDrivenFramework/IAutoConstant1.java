@@ -1,4 +1,4 @@
-package com.AutomationFramework;
+package KeywordDrivenFramework;
 
 public interface IAutoConstant1 {
 	
