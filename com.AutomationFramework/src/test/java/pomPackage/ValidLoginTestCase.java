@@ -21,6 +21,11 @@ public class ValidLoginTestCase extends BaseTest1 {
 		*/
 				
 		lp.validLoginMethod(flib.readPropertyData(PROP_PATH, "username"), flib.readPropertyData(PROP_PATH, "password"));
+		
+		Thread.sleep(2000);
+		
+		HomePage hp=new HomePage(driver);
+		hp.getLogoutLink().click();
 	}
 
 }
