@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="validPwd" value=""/>
+    <parameter name="validUsn" value="admin"/>
+    <parameter name="url" value="http://127.0.0.1/login.do"/>
+    <classes>
+      <class name="testNGExecution.Parameterization">
+        <methods>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- testNGExecution.Parameterization -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="5" name="firefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="validPwd" value=""/>
+    <parameter name="validUsn" value="admin"/>
+    <parameter name="url" value="http://127.0.0.1/login.do"/>
+    <classes>
+      <class name="testNGExecution.Parameterization">
+        <methods>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- testNGExecution.Parameterization -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+  <test thread-count="5" name="edgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="validPwd" value=""/>
+    <parameter name="validUsn" value="admin"/>
+    <parameter name="url" value="http://127.0.0.1/login.do"/>
+    <classes>
+      <class name="testNGExecution.Parameterization">
+        <methods>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- testNGExecution.Parameterization -->
+    </classes>
+  </test> <!-- edgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

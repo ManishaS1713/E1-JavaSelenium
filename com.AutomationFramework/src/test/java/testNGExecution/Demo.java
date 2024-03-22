@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Demo {
-  @Test
+	@Test (groups = "Smoke Testing")		//groups is used for group execution
   public void demo() throws InterruptedException {
 	  WebDriver driver=new ChromeDriver();
 	  driver.manage().window().maximize();
